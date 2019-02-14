@@ -30,4 +30,4 @@ def test_probability_of_unfair_hhhh():
 def test_probability_unfair_die_roll():
     e = Experiment()
     p = e.prob_unfair_die([1, 1, 1, 1], 1000000)
-    assert p == approx(.002365, rel=.01)
+    assert p == approx(.45 * .05 * .30 * .35, rel=.01)
