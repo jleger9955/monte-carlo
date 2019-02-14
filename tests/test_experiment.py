@@ -24,10 +24,10 @@ def test_probability_of_ththh():
 def test_probability_of_unfair_hhhh():
     e = Experiment()
     p = e.prob_unfair_hhhh([1, 1, 1, 1], .3, 1000000, 4)
-    assert p == approx((0.3)**4, rel=.0001)
+    assert p == approx((0.3)**4, rel=.01)
 
 
 def test_probability_unfair_die_roll():
     e = Experiment()
     p = e.prob_unfair_die([1, 1, 1, 1], 1000000)
-    assert p == approx(.002365, rel=.0001)
+    assert p == approx(.002365, rel=.01)

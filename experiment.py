@@ -24,7 +24,7 @@ class Experiment:
         return sum(experiments) / n
 
     def outcome_4_die_rolls(self, d):
-
+        # return [d.roll() % 2 != 0,(d.roll() == 3,d.roll() == 4,d.roll() < 3]
         outcome = []
         # is first roll odd?
         outcome.append(d.roll() % 2 != 0)
